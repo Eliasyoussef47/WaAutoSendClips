@@ -1,0 +1,26 @@
+{
+  "name": "waautosendclips",
+  "version": "1.0.0",
+  "description": "Send newly made clips of a game through WhatApp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eliasyoussef47/WaAutoSendClips.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eliasyoussef47/WaAutoSendClips/issues"
+  },
+  "homepage": "https://github.com/Eliasyoussef47/WaAutoSendClips#readme",
+  "dependencies": {
+    "@open-wa/wa-automate": "^3.0.14",
+    "chokidar": "^3.4.3",
+    "conf": "^7.1.2",
+    "minimist": "^1.2.5",
+    "ora": "^5.1.0"
+  }
+}

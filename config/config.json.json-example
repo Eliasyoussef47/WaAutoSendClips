@@ -1,0 +1,12 @@
+{
+	"watchDirectories": [
+		"C:/Videos/Call of Duty  Modern Warfare 2019/*.mp4"
+	],
+	"sendToNumbers": [
+		31612345678,
+		31687654321
+	],
+	"puppeteer": {
+		"executablePath": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+	}
+}
