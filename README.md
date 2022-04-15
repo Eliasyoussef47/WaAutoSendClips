@@ -1,10 +1,10 @@
 # WaAutoSendClips
-Send newly made clips of a game through WhatApp
+Send newly made clips of a game through WhatApp.
 # Why was this made?
-I would share my games clip of COD MW with my cousin via Whatsapp very often so I thought this would make it easy for me.
+I like to share my game clips of COD MW with my friends via Whatsapp. So I made this to automate the process.
 # Usage
 ## Warning about file size
-Whatsapp doesn't allow sending files larger than 64 MB. If you are using Nvidia GeForce Experience you can set the length and bit rate of your clips, set that to well lower than 64MB.
+Whatsapp doesn't allow sending files larger than 64 MB. If you are using Nvidia GeForce Experience you can set the length and bit rate of your clips. Set that to well lower than 64MB.
 ## Requirements:
 - Node.js
 - Typescript
@@ -14,7 +14,7 @@ Whatsapp doesn't allow sending files larger than 64 MB. If you are using Nvidia 
 - Download the files from the latest release or via git
 - `npm install`
 ## Configuration:
-- Compile the typescipt files by running `tsc in your terminal
+- Compile the typescipt files by running `tsc` in your terminal
 - Make a copy of the file [config/config.json.json-example](config/config.json.json-example) and name it "config.json", fill the next fields inside the file:
   - watchDirectories: the path to the folder where your clips are saved, you can use multiple folders here (Tip: as used in the example, use "*.mp4"(or whatever the extension of your files is) at the end of the path).
   - sendToNumbers: the numbers of contacts you want to send the clips to.
