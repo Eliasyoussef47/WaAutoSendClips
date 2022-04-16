@@ -19,8 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca826c5-6a46-41ab-ba38-e64662fdffe1" name="Default Changelist" comment="Cleanup 🧹">
-      <changelist_data name="Elias youssef" email="eliasyoussef47@gmail.com" />
+    <list default="true" id="5ca826c5-6a46-41ab-ba38-e64662fdffe1" name="Default Changelist" comment="IDE files.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="6244f4c5-733f-4382-bac3-c7be3a26ac0f" name="skip" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +45,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Elias youssef &lt;eliasyoussef47@gmail.com&gt;" />
         <option value="Elias youssef &lt;d-s-a00@hotmail.com&gt;" />
       </list>
     </option>
@@ -80,7 +81,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="rearrange.code.on.save" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Other File Types" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="ts.external.directory.path" value="D:\Projects\WaAutoSendClips\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -165,7 +166,8 @@
       <workItem from="1626864061705" duration="203000" />
       <workItem from="1650015354554" duration="5273000" />
       <workItem from="1650022207985" duration="16606000" />
-      <workItem from="1650111072050" duration="3631000" />
+      <workItem from="1650111072050" duration="4245000" />
+      <workItem from="1650115606549" duration="86000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1607463253450</created>
@@ -202,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650113245196</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="IDE files.">
+      <created>1650115035956</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1650115035956</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,10 +246,10 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="first commit" />
     <MESSAGE value="Restructuring and formatting " />
-    <MESSAGE value="IDE files." />
     <MESSAGE value="updated README.md.&#10;IDE files." />
     <MESSAGE value="Cleanup " />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanup " />
+    <MESSAGE value="IDE files." />
+    <option name="LAST_COMMIT_MESSAGE" value="IDE files." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
