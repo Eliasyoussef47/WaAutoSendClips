@@ -1,86 +1,110 @@
-import Configs from "./config/models/configs";
-import Conf, {Options} from "conf";
-import Utilz from "./Utilz";
-import {create as waCreate} from '@open-wa/wa-automate';
-import {Client as waClient, Contact} from '@open-wa/wa-automate';
+import Configs from "@/Types/configs/configs.js";
+import Conf, { Options } from "conf";
+import { Client as waClient, create as waCreate } from "@open-wa/wa-automate";
 import * as fs from "fs";
-// import Pushbullet from 'pushbullet';
+import { numberToContactId } from "./Utilz.js";
+import ora from "ora";
+import * as path from "path";
+import minimist from "minimist";
+import { watch as chokidarWatch } from "chokidar";
+import ProcessArguments from "@/Types/ProcessArguments.js";
+import { ContactId } from "@open-wa/wa-automate/dist/api/model/aliases.js";
 
-const ora = require('ora');
-let path = require('path');
-let argv = require('minimist')(process.argv.slice(2));
-const chokidar = require('chokidar');
+const argv = minimist(process.argv.slice(2)) as unknown as ProcessArguments;
 
 class Index {
-    private waClient: waClient;
-    private configs: Configs;
-    private conf: Conf;
-    // private pushbullet: Pushbullet;
-    private sendToContacts: Contact[];
+	private waClient: waClient;
+	private inMemoryConfigs: Configs;
+	private conf: Conf<Configs>;
 
-    constructor(arg: any) {
-        // this.configs = new Configs()
-        let confOptions: Options<any> = {
-            cwd: "./config",
-            deserialize: text => this.configs = JSON.parse(text)
-        };
-        this.conf = new Conf(confOptions);
-        // if (argv.n !== undefined) {
-        //     this.configs.notification = argv.n;
-        // }
-        // if (argv.p !== undefined) {
-        //     this.configs.pushbullet.notification = argv.p;
-        // }
-        // if (this.configs.pushbullet.notification) {
-        //     this.pushbullet = new Pushbullet(this.configs.pushbullet.accessToken);
-        // }
-        this.sendToContacts = [];
-    }
+	constructor(argv: ProcessArguments) {
+		const confOptions: Options<Configs> = {
+			cwd: "./",
+			deserialize: text => this.inMemoryConfigs = <Configs> JSON.parse(text),
+			watch: true,
+			configName: argv.configs ?? "config"
+		};
+		this.conf = new Conf(confOptions);
+		this.conf.onDidChange("sendToNumbers", () => {
+			console.log("New recipients: ", this.conf.get("sendToNumbers"));
+			console.log("\n");
+		});
+		if (argv.n !== undefined) {
+			this.inMemoryConfigs.notification = argv.n;
+		}
+		if (argv.mD !== undefined) {
+			this.inMemoryConfigs.multiDevice = argv.mD;
+		}
+		if (argv.p !== undefined) {
+			this.inMemoryConfigs.pushbullet.notification = argv.p;
+		}
+	}
 
-    public main = async () => {
-        const waLaunchConfig = {
-            disableSpins: true,
-            executablePath: this.configs.puppeteer.executablePath ? this.configs.puppeteer.executablePath : null,
-            useChrome: true
-        };
-        this.waClient = await waCreate(waLaunchConfig);
-        console.clear(); // clear the stuff from the WhatsApp client
-        console.log("Configurations: ", this.configs);
-        for (let contactNumber of this.configs.sendToNumbers) {
-            let contactId = Utilz.numberToContactId(Number(contactNumber));
-            let contact = await this.waClient.getContact(contactId);
-            if (contact === null) throw Error("Getting contact info failed. Check contact number");
-            this.sendToContacts.push(contact);
-        }
-        chokidar.watch(this.configs.watchDirectories,
-            {awaitWriteFinish: true, ignoreInitial: true}).on("add", async (filePath: string, stats?: fs.Stats) => {
-            await this.sendClip(filePath, stats);
-            console.log("new file path: ", filePath);
-        });
-    }
+	private get sendToContactIds(): Array<ContactId> {
+		const result = new Array<ContactId>();
+		for (const contactNumber of this.conf.get("sendToNumbers")) {
+			const contactId = numberToContactId(Number(contactNumber));
+			result.push(contactId);
+		}
+		return result;
+	}
 
-    public sendClip = async (filePath: string, stats: fs.Stats) => {
-        if (!this.checkFile(filePath, stats)) return false;
-        for (let contact of this.sendToContacts) {
-            await this.waClient.sendImage(
-                contact.id.toString(),
-                filePath,
-                path.basename(filePath),
-                "");
-        }
-    }
+	public main = async (): Promise<void> => {
+		const waLaunchConfig = {
+			disableSpins: true,
+			executablePath: this.inMemoryConfigs.puppeteer.executablePath ? this.inMemoryConfigs.puppeteer.executablePath : null,
+			useChrome: true,
+			multiDevice: this.inMemoryConfigs.multiDevice
+		};
+		this.waClient = await waCreate(waLaunchConfig);
+		console.clear(); // clear the stuff from the WhatsApp client
+		console.log("Watching directories: ", this.conf.get("watchDirectories"));
+		console.log("Recipients: ", this.conf.get("sendToNumbers"));
 
-    /**
-     * checks if the newly created file is a video.
-     */
-    public checkFile = (filePath: string, stats: fs.Stats) => {
-        if (!stats.isFile()) return false;
-        return path.extname(filePath) === '.mp4';
-    }
+		chokidarWatch(this.inMemoryConfigs.watchDirectories,
+			{ awaitWriteFinish: true, ignoreInitial: true })
+			.on("add", (filePath: string, stats?: fs.Stats): void => {
+				void this.sendClip(filePath, stats);
+			});
+	};
+
+	/**
+	 * Sends a video to all the contacts with the WhatsApp client.
+	 *
+	 * @param filePath
+	 * Path to the video you want to send.
+	 * @param stats
+	 * fs.Stats of the video you want to send.
+	 */
+	public sendClip = async (filePath: string, stats: fs.Stats): Promise<void> => {
+		if (!this.checkFile(filePath, stats)) return;
+
+		console.log("new file path: ", filePath);
+		for (const contactId of this.sendToContactIds) {
+			await this.waClient.sendImage(
+				contactId,
+				filePath,
+				path.basename(filePath),
+				"");
+		}
+	};
+
+	/**
+	 * Checks if the newly created file is a video.
+	 *
+	 * @param filePath
+	 * Path to a file
+	 * @param stats
+	 * a fs.Stats of the file
+	 */
+	public checkFile = (filePath: string, stats: fs.Stats): boolean => {
+		if (!stats.isFile()) return false;
+		return path.extname(filePath) === ".mp4";
+	};
 }
 
-let index = new Index(argv);
-index.main();
+const index = new Index(argv);
+await index.main();
 
-const spinner = ora('Waiting for a new file').start();
+ora("Waiting for a new file" + "\n").start();
 

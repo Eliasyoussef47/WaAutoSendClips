@@ -19,17 +19,27 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca826c5-6a46-41ab-ba38-e64662fdffe1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Utilz.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/config.json.json-example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/models/configs.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/models/puppeteer/puppeteer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/models/pushbullet/pushbullet.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    <list default="true" id="5ca826c5-6a46-41ab-ba38-e64662fdffe1" name="Default Changelist" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Types/ProcessArguments.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Types/configs/configs.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Types/configs/pushbullet/pushbullet.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/WaAutoSendClips.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WaAutoSendClips.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilz.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Utilz.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.json.json-example" beforeDir="false" afterPath="$PROJECT_DIR$/config.json.json-example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/models/configs.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/models/puppeteer/puppeteer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Types/configs/puppeteer/puppeteer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
+    <list id="6244f4c5-733f-4382-bac3-c7be3a26ac0f" name="skip" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +56,9 @@
       </list>
     </option>
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -54,6 +67,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="ProjectId" id="1k6pEY7XiGn0vjX4f6KKkJ7HUQx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -61,19 +80,31 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="code.cleanup.on.save" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="rearrange.code.on.save" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Other File Types" />
+    <property name="ts.external.directory.path" value="D:\Projects\WaAutoSendClips\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\WaAutoSendClips" />
       <recent name="D:\Projects\WaAutoSendClips\config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\WaAutoSendClips" />
+      <recent name="D:\Projects\WaAutoSendClips\src\Types\config" />
+      <recent name="D:\Projects\WaAutoSendClips\src\Types" />
+      <recent name="D:\Projects\WaAutoSendClips\src" />
       <recent name="D:\Projects\WaAutoSendClips\config\models" />
     </key>
   </component>
@@ -82,6 +113,16 @@
       <method v="2">
         <option name="TypeScript.Before.Run" enabled="true" FAIL_ON_ERROR="true" CONFIG_PATH="$PROJECT_DIR$/tsconfig.json" />
       </method>
+    </configuration>
+    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
     </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -95,6 +136,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.lint" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -103,6 +145,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5ca826c5-6a46-41ab-ba38-e64662fdffe1" name="Default Changelist" comment="" />
+      <changelist id="6244f4c5-733f-4382-bac3-c7be3a26ac0f" name="skip" comment="" />
       <created>1605030784141</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -118,26 +161,44 @@
       <workItem from="1605536314634" duration="2115000" />
       <workItem from="1605808974458" duration="598000" />
       <workItem from="1607448187229" duration="58000" />
-      <workItem from="1607461556025" duration="1027000" />
+      <workItem from="1607461556025" duration="3735000" />
+      <workItem from="1607503723260" duration="1793000" />
+      <workItem from="1609165349509" duration="15000" />
+      <workItem from="1609165394764" duration="67000" />
+      <workItem from="1609165513538" duration="1511000" />
+      <workItem from="1610497557749" duration="72000" />
+      <workItem from="1611521450293" duration="157000" />
+      <workItem from="1615325063214" duration="75000" />
+      <workItem from="1615891696031" duration="7000" />
+      <workItem from="1619445936522" duration="163000" />
+      <workItem from="1619455138080" duration="11000" />
+      <workItem from="1626546327595" duration="641000" />
+      <workItem from="1626864061705" duration="203000" />
+      <workItem from="1650015354554" duration="5273000" />
+      <workItem from="1650022207985" duration="16606000" />
+      <workItem from="1650111072050" duration="395000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1607463253450</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607463253450</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/config/models/configs.js" />
-        <option value="$PROJECT_DIR$/config/models/puppeteer/puppeteer.js" />
-        <option value="$PROJECT_DIR$/config/models/pushbullet/pushbullet.js" />
-        <option value="$PROJECT_DIR$/index.js.map" />
-        <option value="$PROJECT_DIR$/config/models/configs.js.map" />
-        <option value="$PROJECT_DIR$/config/models/puppeteer/puppeteer.js.map" />
-        <option value="$PROJECT_DIR$/config/models/pushbullet/pushbullet.js.map" />
-        <option value="$PROJECT_DIR$/Utilz.js.map" />
         <option value="$PROJECT_DIR$/Utilz.js" />
-        <option value="$PROJECT_DIR$/index3.js" />
-        <option value="$PROJECT_DIR$/index3.js.map" />
+        <option value="$PROJECT_DIR$/index.js.map" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/Utilz.js.map" />
+        <option value="$PROJECT_DIR$/src/Types/ProcessArguments.js" />
+        <option value="$PROJECT_DIR$/src/Types/ProcessArguments.js.map" />
+        <option value="$PROJECT_DIR$/index.js" />
       </list>
     </option>
   </component>
@@ -151,128 +212,13 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="25" y="204" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607461936576">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="25" y="204" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607461936576" />
-    <state x="681" y="314" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607462460440">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="681" y="314" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607462460440" />
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1605265874039">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605265874039" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605040201254">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605040201254" />
-    <state x="715" y="141" key="#xdebugger.evaluate" timestamp="1605360406077">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="715" y="141" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605360406077" />
-    <state width="991" height="646" key="DebuggerActiveHint" timestamp="1605360434743">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="991" height="646" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605360434743" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1605047107245">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605047107245" />
-    <state width="1877" height="298" key="GridCell.Tab.0.bottom" timestamp="1607462098318">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607462098318" />
-    <state width="1877" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605300886723" />
-    <state width="1877" height="298" key="GridCell.Tab.0.center" timestamp="1607462098318">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="298" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607462098318" />
-    <state width="1877" height="298" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605300886721" />
-    <state width="1877" height="298" key="GridCell.Tab.0.left" timestamp="1607462098318">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="298" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607462098318" />
-    <state width="1877" height="298" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605300886720" />
-    <state width="1877" height="298" key="GridCell.Tab.0.right" timestamp="1607462098318">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="298" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607462098318" />
-    <state width="1877" height="298" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605300886722" />
-    <state width="1877" height="277" key="GridCell.Tab.1.bottom" timestamp="1605360441560">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="277" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605360441560" />
-    <state width="1877" height="277" key="GridCell.Tab.1.center" timestamp="1605360441559">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="277" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605360441559" />
-    <state width="1877" height="277" key="GridCell.Tab.1.left" timestamp="1605360441559">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="277" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605360441559" />
-    <state width="1877" height="277" key="GridCell.Tab.1.right" timestamp="1605360441559">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="277" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605360441559" />
-    <state width="1877" height="277" key="GridCell.Tab.2.bottom" timestamp="1605360441560">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="277" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605360441560" />
-    <state width="1877" height="277" key="GridCell.Tab.2.center" timestamp="1605360441560">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="277" key="GridCell.Tab.2.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605360441560" />
-    <state width="1877" height="277" key="GridCell.Tab.2.left" timestamp="1605360441560">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="277" key="GridCell.Tab.2.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605360441560" />
-    <state width="1877" height="277" key="GridCell.Tab.2.right" timestamp="1605360441560">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="277" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605360441560" />
-    <state width="1877" height="277" key="GridCell.Tab.3.bottom" timestamp="1605360441560">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="277" key="GridCell.Tab.3.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605360441560" />
-    <state width="1877" height="277" key="GridCell.Tab.3.center" timestamp="1605360441560">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="277" key="GridCell.Tab.3.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605360441560" />
-    <state width="1877" height="277" key="GridCell.Tab.3.left" timestamp="1605360441560">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="277" key="GridCell.Tab.3.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605360441560" />
-    <state width="1877" height="277" key="GridCell.Tab.3.right" timestamp="1605360441560">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="277" key="GridCell.Tab.3.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605360441560" />
-    <state x="785" y="138" key="RollbackChangesDialog" timestamp="1607462555062">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="785" y="138" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607462555062" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1605047214583">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605047214583" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1605037931583">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605037931583" />
-    <state x="2658" y="422" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1605030869819">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2658" y="422" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1605030869819" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1605294163877">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605294163877" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1607461766562">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1607461766562" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

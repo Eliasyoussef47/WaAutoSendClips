@@ -18,3 +18,14 @@ debug.log
 /Utilz.js.map
 /index.js
 /index3.js
+# managed
+**.data.json
+**.node-persist**
+# end managed
+/config.json
+
+# managed
+**_IGNORE_**
+# end managed
+/csgo_config.json
+/start_csgo.bat

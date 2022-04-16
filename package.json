@@ -2,9 +2,11 @@
   "name": "waautosendclips",
   "version": "1.0.0",
   "description": "Send newly made clips of a game through WhatApp",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "repository": {
     "type": "git",
@@ -17,10 +19,15 @@
   },
   "homepage": "https://github.com/Eliasyoussef47/WaAutoSendClips#readme",
   "dependencies": {
-    "@open-wa/wa-automate": "^3.0.14",
+    "@open-wa/wa-automate": "^4.35.6",
+    "@typescript-eslint/eslint-plugin": "^5.11.0",
+    "@typescript-eslint/parser": "^5.11.0",
     "chokidar": "^3.4.3",
     "conf": "^7.1.2",
+    "eslint": "^8.9.0",
     "minimist": "^1.2.5",
-    "ora": "^5.1.0"
+    "ora": "^5.1.0",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.5"
   }
 }
