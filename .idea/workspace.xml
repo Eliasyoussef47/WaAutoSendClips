@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5ca826c5-6a46-41ab-ba38-e64662fdffe1" name="Default Changelist" comment="Cleanup 🧹">
       <changelist_data name="Elias youssef" email="eliasyoussef47@gmail.com" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="6244f4c5-733f-4382-bac3-c7be3a26ac0f" name="skip" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -166,7 +165,7 @@
       <workItem from="1626864061705" duration="203000" />
       <workItem from="1650015354554" duration="5273000" />
       <workItem from="1650022207985" duration="16606000" />
-      <workItem from="1650111072050" duration="3184000" />
+      <workItem from="1650111072050" duration="3631000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1607463253450</created>
