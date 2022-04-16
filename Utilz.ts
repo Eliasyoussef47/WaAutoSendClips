@@ -13,5 +13,5 @@ export default class Utilz {
 }
 
 export const numberToContactId = (phoneNumber: number): ContactId => {
-	return <`${ number }@c.us` & { __brand?: "ContactId" }> `${ phoneNumber }@c.us`;
+	return <ContactId> `${ phoneNumber }@c.us`;
 };
